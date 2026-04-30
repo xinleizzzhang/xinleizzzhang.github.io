@@ -21,18 +21,20 @@
       padding: 60px 20px;
       text-align: center;
     }
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid white;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
     header h1 {
       margin-bottom: 10px;
-      font-size: 38px;
+      font-size: 40px;
     }
 
     header p {
@@ -47,6 +49,7 @@
       border-bottom: 1px solid #ddd;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
 
     nav a {
@@ -54,6 +57,11 @@
       text-decoration: none;
       color: #1f2937;
       font-weight: bold;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #4b5563;
     }
 
     section {
@@ -69,15 +77,32 @@
       color: #1f2937;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 8px;
+      font-size: 28px;
     }
 
     h3 {
       color: #374151;
-      margin-top: 22px;
+      margin-top: 24px;
+      font-size: 22px;
     }
 
-    ul {
+    h4 {
+      color: #4b5563;
+      margin-top: -8px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    ul, ol {
       padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    ol li {
+      margin-bottom: 14px;
     }
 
     .button {
@@ -95,11 +120,32 @@
       background-color: #374151;
     }
 
+    .note {
+      color: #555;
+      font-size: 15px;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
       color: #666;
       font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      section {
+        margin: 20px 12px;
+        padding: 22px;
+      }
     }
   </style>
 </head>
@@ -117,6 +163,7 @@
 <nav>
   <a href="#about">About</a>
   <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
   <a href="#skills">Skills</a>
   <a href="#education">Education</a>
   <a href="#cv">CV</a>
@@ -141,26 +188,68 @@
 <section id="research">
   <h2>Research Experience</h2>
 
-  <h3>Degradable Antibacterial Metal–Polyphenol-Coated Film for Food Preservation</h3>
+  <h3>MSc Research Project | Nanyang Technological University, Singapore</h3>
+  <h4>Degradable Antibacterial Metal–Polyphenol-Coated Film for Food Preservation</h4>
   <p>
-    This project aims to develop biodegradable functional films with antibacterial,
-    antioxidant, and preservation-related properties by integrating gelatin–chitosan film
-    matrices with tannic acid/Zn²⁺ metal–polyphenol networks.
+    My current MSc research focuses on the development of biodegradable functional films
+    based on gelatin–chitosan composite matrices and tannic acid/Zn²⁺ metal–polyphenol
+    networks for food preservation applications.
   </p>
 
   <ul>
-    <li>Prepared gelatin–chitosan composite films with different formulation conditions.</li>
-    <li>Constructed tannic acid/Zn²⁺ metal–polyphenol functional coatings.</li>
-    <li>Evaluated antibacterial and antioxidant performance using microbiological and chemical assays.</li>
-    <li>Characterized film properties including water contact angle, water vapor transmission, UV-blocking ability, and preservation performance.</li>
+    <li>Prepared gelatin–chitosan composite films and optimized formulation conditions for film formation and stability.</li>
+    <li>Constructed tannic acid/Zn²⁺ metal–polyphenol functional coatings to enhance antibacterial, antioxidant, and preservation-related performance.</li>
+    <li>Evaluated antibacterial and antioxidant properties using microbiological assays and DPPH-based antioxidant testing.</li>
+    <li>Characterized film properties including water contact angle, water vapor transmission, UV-blocking ability, film thickness, and preservation performance.</li>
     <li>Analyzed experimental data using GraphPad Prism, Origin, R, Python, and MATLAB.</li>
   </ul>
 
-  <h3>Previous Research Background</h3>
+  <h3>Undergraduate Research Project | Environmental Science</h3>
+  <h4>Nanotoxicology and Environmental Microbiology-Related Research</h4>
   <p>
-    During my undergraduate training, I gained research exposure in environmental microbiology
-    and nanotoxicology, including experimental work related to zebrafish exposure models and
-    micro-/nanoparticle-associated biological effects.
+    During my undergraduate study, I participated in research related to environmental
+    microbiology and nanotoxicology, with experimental exposure to aquatic model systems
+    and micro-/nanoparticle-associated biological effects.
+  </p>
+
+  <ul>
+    <li>Participated in zebrafish exposure-related experimental work.</li>
+    <li>Gained research experience in micro-/nanoparticle and silver nanoparticle-associated biological effects.</li>
+    <li>Developed foundational skills in experimental operation, literature review, data organization, and scientific writing.</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications & Patents</h2>
+
+  <h3>Journal Publications</h3>
+  <ol>
+    <li>
+      <strong>[Author list].</strong>
+      [Full article title].
+      <em>[Journal Name]</em>, [Year], [Volume(Issue)], [Page range].
+      DOI: <a href="[DOI link]" target="_blank">[DOI]</a>
+    </li>
+
+    <li>
+      <strong>[Author list].</strong>
+      [Full article title].
+      <em>[Journal Name]</em>, [Year], [Volume(Issue)], [Page range].
+      DOI: <a href="[DOI link]" target="_blank">[DOI]</a>
+    </li>
+  </ol>
+
+  <h3>Patents</h3>
+  <ol>
+    <li>
+      <strong>[Inventor list].</strong>
+      [Patent title].
+      [Patent type], [Patent number], [Year].
+    </li>
+  </ol>
+
+  <p class="note">
+    Note: Please replace the placeholder publication and patent information with verified bibliographic details.
   </p>
 </section>
 
