@@ -27,27 +27,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 50px;
-    }
-
-    .hero-text {
-      flex: 1.4;
-      text-align: left;
-    }
-
-    .hero-text h1 {
-      margin: 0 0 16px 0;
-      font-size: 46px;
-      line-height: 1.2;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      margin: 8px 0;
+      gap: 55px;
     }
 
     .hero-photo-wrapper {
-      flex: 0.8;
+      flex: 0.9;
       display: flex;
       justify-content: center;
     }
@@ -60,6 +44,22 @@
       border: 4px solid white;
       box-shadow: 0 8px 24px rgba(0,0,0,0.35);
       background-color: white;
+    }
+
+    .hero-text {
+      flex: 1.3;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      margin: 0 0 16px 0;
+      font-size: 46px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin: 8px 0;
     }
 
     nav {
@@ -162,7 +162,7 @@
       }
 
       .hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         gap: 28px;
       }
@@ -197,15 +197,15 @@
 
 <header>
   <div class="hero-container">
+    <div class="hero-photo-wrapper">
+      <img src="profile.jpg" alt="Xinlei Zhang profile photo" class="profile-photo">
+    </div>
+
     <div class="hero-text">
       <h1>Xinlei Zhang</h1>
       <p>MSc Student in Biomedical Engineering</p>
       <p>Nanyang Technological University, Singapore</p>
       <p>Research Interests: Biomaterials | Antibacterial Functional Films | Nanomedicine</p>
-    </div>
-
-    <div class="hero-photo-wrapper">
-      <img src="profile.jpg" alt="Xinlei Zhang profile photo" class="profile-photo">
     </div>
   </div>
 </header>
